@@ -1,0 +1,214 @@
+\hypertarget{class_game_model}{}\doxysection{Game\+Model Class Reference}
+\label{class_game_model}\index{GameModel@{GameModel}}
+
+
+The logic of the game.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_model_aa5637be937d4a2ffe81541d513838424}{Game\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_model_a138ac32f379d5b4a58fd954c94788fcb}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization of the game field. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_model_a006ab564f10fe9d22201840ddb326a6a}{Check}} ()
+\begin{DoxyCompactList}\small\item\em Is the game solved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_model_ad27d255f61262a0348a9ba873dc62837}{Move}} (\mbox{\hyperlink{_game_model_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} direction)
+\begin{DoxyCompactList}\small\item\em Movings in the geme. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_model_ac7b97e8e9611630820b4c69b89db6b7d}{Is\+Solved}} ()
+\begin{DoxyCompactList}\small\item\em Setter for bool solved. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{class_game_model_aaba08fb9efa16a9b3ede9b7819cc1bfe}{Elements}} ()
+\begin{DoxyCompactList}\small\item\em setter for counters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}{S\+I\+ZE}} = 4
+\item 
+static const int \mbox{\hyperlink{class_game_model_a570986531b235606649bf26692a27b6d}{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}} = \mbox{\hyperlink{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}{S\+I\+ZE}} $\ast$ \mbox{\hyperlink{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}{S\+I\+ZE}}
+\begin{DoxyCompactList}\small\item\em Size of field in counters ~\newline
+ \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_game_model_a8cd4f992f2dab2591e9c35ac60a8d3d1}{F\+I\+E\+L\+D\+\_\+\+S\+I\+ZE}} = 500
+\begin{DoxyCompactList}\small\item\em Size of field in pixels ~\newline
+ \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{class_game_model_ad185dfb53b8b58ffcf659d62ddd73431}{C\+E\+L\+L\+\_\+\+S\+I\+ZE}} = 120
+\begin{DoxyCompactList}\small\item\em Size of counter in pixels ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_model_abb253cd95287d2b7ef112601efbe0909}{elements}} \mbox{[}\mbox{\hyperlink{class_game_model_a570986531b235606649bf26692a27b6d}{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array of counters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_model_a65818c6d1a545f2a81f88292cfb8c74f}{empty\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Empty counter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_model_a9a7fe4370cabf05e678b4f775b327467}{solved}}
+\begin{DoxyCompactList}\small\item\em If the end ofthe game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The logic of the game. 
+
+This class contains the main logic fields and functions Public constants are for the sizes of game field and for counters(game objects) The class has protected fields\+: the array of counters, emty counter and logical variable for finishing the game Public methods\+: Init-\/ fill the game field, Check-\/ checks is the game solved, Move-\/ movings in the game, two setters 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_model_aa5637be937d4a2ffe81541d513838424}\label{class_game_model_aa5637be937d4a2ffe81541d513838424}} 
+\index{GameModel@{GameModel}!GameModel@{GameModel}}
+\index{GameModel@{GameModel}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{GameModel()}{GameModel()}}
+{\footnotesize\ttfamily Game\+Model\+::\+Game\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Initialize the game objects and field 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_model_a006ab564f10fe9d22201840ddb326a6a}\label{class_game_model_a006ab564f10fe9d22201840ddb326a6a}} 
+\index{GameModel@{GameModel}!Check@{Check}}
+\index{Check@{Check}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{Check()}{Check()}}
+{\footnotesize\ttfamily bool Game\+Model\+::\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Is the game solved. 
+
+\textbackslash{} brief Is the game solved
+
+Checks if the solution is correct \mbox{\Hypertarget{class_game_model_aaba08fb9efa16a9b3ede9b7819cc1bfe}\label{class_game_model_aaba08fb9efa16a9b3ede9b7819cc1bfe}} 
+\index{GameModel@{GameModel}!Elements@{Elements}}
+\index{Elements@{Elements}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{Elements()}{Elements()}}
+{\footnotesize\ttfamily int$\ast$ Game\+Model\+::\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+setter for counters 
+
+\mbox{\Hypertarget{class_game_model_a138ac32f379d5b4a58fd954c94788fcb}\label{class_game_model_a138ac32f379d5b4a58fd954c94788fcb}} 
+\index{GameModel@{GameModel}!Init@{Init}}
+\index{Init@{Init}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Model\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialization of the game field. 
+
+Init the field and make the true game solution \mbox{\Hypertarget{class_game_model_ac7b97e8e9611630820b4c69b89db6b7d}\label{class_game_model_ac7b97e8e9611630820b4c69b89db6b7d}} 
+\index{GameModel@{GameModel}!IsSolved@{IsSolved}}
+\index{IsSolved@{IsSolved}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{IsSolved()}{IsSolved()}}
+{\footnotesize\ttfamily bool Game\+Model\+::\+Is\+Solved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for bool solved. 
+
+\mbox{\Hypertarget{class_game_model_ad27d255f61262a0348a9ba873dc62837}\label{class_game_model_ad27d255f61262a0348a9ba873dc62837}} 
+\index{GameModel@{GameModel}!Move@{Move}}
+\index{Move@{Move}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Game\+Model\+::\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_game_model_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Movings in the geme. 
+
+Movings of the counters on the field logic Parametr -\/ direction of the move from the keyboard $<$ columns
+
+$<$ rows
+
+$<$ Left
+
+$<$ Right
+
+$<$ Up
+
+$<$ Down
+
+Swap the moving counter and the empty counter
+
+$<$ final solution
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_model_a570986531b235606649bf26692a27b6d}\label{class_game_model_a570986531b235606649bf26692a27b6d}} 
+\index{GameModel@{GameModel}!ARRAY\_SIZE@{ARRAY\_SIZE}}
+\index{ARRAY\_SIZE@{ARRAY\_SIZE}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{ARRAY\_SIZE}{ARRAY\_SIZE}}
+{\footnotesize\ttfamily const int Game\+Model\+::\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE = \mbox{\hyperlink{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}{S\+I\+ZE}} $\ast$ \mbox{\hyperlink{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}{S\+I\+ZE}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Size of field in counters ~\newline
+ 
+
+\mbox{\Hypertarget{class_game_model_ad185dfb53b8b58ffcf659d62ddd73431}\label{class_game_model_ad185dfb53b8b58ffcf659d62ddd73431}} 
+\index{GameModel@{GameModel}!CELL\_SIZE@{CELL\_SIZE}}
+\index{CELL\_SIZE@{CELL\_SIZE}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{CELL\_SIZE}{CELL\_SIZE}}
+{\footnotesize\ttfamily const int Game\+Model\+::\+C\+E\+L\+L\+\_\+\+S\+I\+ZE = 120\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Size of counter in pixels ~\newline
+ 
+
+\mbox{\Hypertarget{class_game_model_abb253cd95287d2b7ef112601efbe0909}\label{class_game_model_abb253cd95287d2b7ef112601efbe0909}} 
+\index{GameModel@{GameModel}!elements@{elements}}
+\index{elements@{elements}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{elements}{elements}}
+{\footnotesize\ttfamily int Game\+Model\+::elements\mbox{[}\mbox{\hyperlink{class_game_model_a570986531b235606649bf26692a27b6d}{A\+R\+R\+A\+Y\+\_\+\+S\+I\+ZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Array of counters. 
+
+\mbox{\Hypertarget{class_game_model_a65818c6d1a545f2a81f88292cfb8c74f}\label{class_game_model_a65818c6d1a545f2a81f88292cfb8c74f}} 
+\index{GameModel@{GameModel}!empty\_index@{empty\_index}}
+\index{empty\_index@{empty\_index}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{empty\_index}{empty\_index}}
+{\footnotesize\ttfamily int Game\+Model\+::empty\+\_\+index\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Empty counter. 
+
+\mbox{\Hypertarget{class_game_model_a8cd4f992f2dab2591e9c35ac60a8d3d1}\label{class_game_model_a8cd4f992f2dab2591e9c35ac60a8d3d1}} 
+\index{GameModel@{GameModel}!FIELD\_SIZE@{FIELD\_SIZE}}
+\index{FIELD\_SIZE@{FIELD\_SIZE}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{FIELD\_SIZE}{FIELD\_SIZE}}
+{\footnotesize\ttfamily const int Game\+Model\+::\+F\+I\+E\+L\+D\+\_\+\+S\+I\+ZE = 500\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Size of field in pixels ~\newline
+ 
+
+\mbox{\Hypertarget{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}\label{class_game_model_ac14094fe03ea58ef0c5ead893254cbc8}} 
+\index{GameModel@{GameModel}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily const int Game\+Model\+::\+S\+I\+ZE = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_model_a9a7fe4370cabf05e678b4f775b327467}\label{class_game_model_a9a7fe4370cabf05e678b4f775b327467}} 
+\index{GameModel@{GameModel}!solved@{solved}}
+\index{solved@{solved}!GameModel@{GameModel}}
+\doxysubsubsection{\texorpdfstring{solved}{solved}}
+{\footnotesize\ttfamily bool Game\+Model\+::solved\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+If the end ofthe game. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/source/repos/\+Laba 3 O\+O\+P/\+Laba 3 O\+O\+P/\mbox{\hyperlink{_game_model_8h}{Game\+Model.\+h}}\item 
+C\+:/\+Users/\+User/source/repos/\+Laba 3 O\+O\+P/\+Laba 3 O\+O\+P/\mbox{\hyperlink{_game_model_8cpp}{Game\+Model.\+cpp}}\end{DoxyCompactItemize}

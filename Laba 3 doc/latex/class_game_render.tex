@@ -1,0 +1,171 @@
+\hypertarget{class_game_render}{}\doxysection{Game\+Render Class Reference}
+\label{class_game_render}\index{GameRender@{GameRender}}
+
+
+Class for the visualization.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Render.\+h$>$}
+
+
+
+Inherits Drawable, and Transformable.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_render_a8c12535c7e83e272da6e149104e465e6}{Game\+Render}} (\mbox{\hyperlink{class_game_model}{Game\+Model}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_render_af0ab8870d8c1ab41462b15b85412efdc}{$\sim$\+Game\+Render}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window \& \mbox{\hyperlink{class_game_render_aa916901ca0b60339f7659a19d8891997}{window}} ()
+\begin{DoxyCompactList}\small\item\em Create window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_render_a230a053aeb3200323899db8aabc4194e}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Create and initialize the game window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_render_a3e5a266a334145dfda473afa0b2a84aa}{Render}} ()
+\begin{DoxyCompactList}\small\item\em draw and check the game situation \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_render_a38cad48c6c136a64668d0f68e23819fe}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em drawind method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_model}{Game\+Model}} $\ast$ \mbox{\hyperlink{class_game_render_a3a0e78784a2b378f96bbd1e4f70c4261}{m\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em game object \end{DoxyCompactList}\item 
+sf\+::\+Render\+Window \mbox{\hyperlink{class_game_render_a2de0f44fc350f285c33b9b66e96fcf3c}{m\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em game window \end{DoxyCompactList}\item 
+sf\+::\+Text \mbox{\hyperlink{class_game_render_a1a7ac4d996d35d70650155cf84ee1a0f}{m\+\_\+text}}
+\begin{DoxyCompactList}\small\item\em text \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for the visualization. 
+
+This class draws the window of the game 15 It has fields of \mbox{\hyperlink{class_game_model}{Game\+Model}}, Game window and text It has constructor, destructor, public methods\+: window-\/ create the window, Init-\/ initialize the game, Render-\/ draw the game steps Virtual method draw-\/ draws the game field and counters 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_render_a8c12535c7e83e272da6e149104e465e6}\label{class_game_render_a8c12535c7e83e272da6e149104e465e6}} 
+\index{GameRender@{GameRender}!GameRender@{GameRender}}
+\index{GameRender@{GameRender}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{GameRender()}{GameRender()}}
+{\footnotesize\ttfamily Game\+Render\+::\+Game\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_model}{Game\+Model}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor Parameter-\/ game object Function \mbox{\hyperlink{class_game_render_a230a053aeb3200323899db8aabc4194e}{Init()}} $<$ game object
+
+Initialization\mbox{\Hypertarget{class_game_render_af0ab8870d8c1ab41462b15b85412efdc}\label{class_game_render_af0ab8870d8c1ab41462b15b85412efdc}} 
+\index{GameRender@{GameRender}!````~GameRender@{$\sim$GameRender}}
+\index{````~GameRender@{$\sim$GameRender}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameRender()}{~GameRender()}}
+{\footnotesize\ttfamily Game\+Render\+::$\sim$\+Game\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_render_a38cad48c6c136a64668d0f68e23819fe}\label{class_game_render_a38cad48c6c136a64668d0f68e23819fe}} 
+\index{GameRender@{GameRender}!draw@{draw}}
+\index{draw@{draw}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+Render\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+drawind method 
+
+$<$ Color(\+R\+G\+B)
+
+drawing the shape of the game field
+
+preparing for drawing counters
+
+Another color for solved game
+
+green color for counters on the correct places
+
+draw counters which are not empty
+
+counting counter position
+
+positions of the texts\mbox{\Hypertarget{class_game_render_a230a053aeb3200323899db8aabc4194e}\label{class_game_render_a230a053aeb3200323899db8aabc4194e}} 
+\index{GameRender@{GameRender}!Init@{Init}}
+\index{Init@{Init}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool Game\+Render\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create and initialize the game window. 
+
+Makes the field and texts Field position
+
+Window 600 x 600, 60 updatesper second
+
+Instructions for the game
+
+$<$ Color\mbox{\Hypertarget{class_game_render_a3e5a266a334145dfda473afa0b2a84aa}\label{class_game_render_a3e5a266a334145dfda473afa0b2a84aa}} 
+\index{GameRender@{GameRender}!Render@{Render}}
+\index{Render@{Render}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Render\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draw and check the game situation 
+
+draw the current situation in the game \mbox{\Hypertarget{class_game_render_aa916901ca0b60339f7659a19d8891997}\label{class_game_render_aa916901ca0b60339f7659a19d8891997}} 
+\index{GameRender@{GameRender}!window@{window}}
+\index{window@{window}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window\& Game\+Render\+::window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create window. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_render_a3a0e78784a2b378f96bbd1e4f70c4261}\label{class_game_render_a3a0e78784a2b378f96bbd1e4f70c4261}} 
+\index{GameRender@{GameRender}!m\_game@{m\_game}}
+\index{m\_game@{m\_game}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{m\_game}{m\_game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_model}{Game\+Model}}$\ast$ Game\+Render\+::m\+\_\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+game object 
+
+\mbox{\Hypertarget{class_game_render_a1a7ac4d996d35d70650155cf84ee1a0f}\label{class_game_render_a1a7ac4d996d35d70650155cf84ee1a0f}} 
+\index{GameRender@{GameRender}!m\_text@{m\_text}}
+\index{m\_text@{m\_text}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{m\_text}{m\_text}}
+{\footnotesize\ttfamily sf\+::\+Text Game\+Render\+::m\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+text 
+
+\mbox{\Hypertarget{class_game_render_a2de0f44fc350f285c33b9b66e96fcf3c}\label{class_game_render_a2de0f44fc350f285c33b9b66e96fcf3c}} 
+\index{GameRender@{GameRender}!m\_window@{m\_window}}
+\index{m\_window@{m\_window}!GameRender@{GameRender}}
+\doxysubsubsection{\texorpdfstring{m\_window}{m\_window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window Game\+Render\+::m\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+game window 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/source/repos/\+Laba 3 O\+O\+P/\+Laba 3 O\+O\+P/\mbox{\hyperlink{_game_render_8h}{Game\+Render.\+h}}\item 
+C\+:/\+Users/\+User/source/repos/\+Laba 3 O\+O\+P/\+Laba 3 O\+O\+P/\mbox{\hyperlink{_game_render_8cpp}{Game\+Render.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{class_game_controller}{}\doxysection{Game\+Controller Class Reference}
+\label{class_game_controller}\index{GameController@{GameController}}
+
+
+Controller class.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Controller.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_controller_a1a88f549204f31bc893ab4abc227e5f6}{Game\+Controller}} (\mbox{\hyperlink{class_game_model}{Game\+Model}} $\ast$game, \mbox{\hyperlink{class_game_render}{Game\+Render}} $\ast$render)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_controller_aab436961a422d078975bc7a49bdfcab7}{$\sim$\+Game\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_controller_a3330e16e1df52c6de6f857ac2a409604}{Run}} ()
+\begin{DoxyCompactList}\small\item\em Main method for starting the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_model}{Game\+Model}} $\ast$ \mbox{\hyperlink{class_game_controller_a5bcead6907317e6da462c3b0b5420e40}{m\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em game model \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_render}{Game\+Render}} $\ast$ \mbox{\hyperlink{class_game_controller_ad6d60d557b74560e37fb801e7e6c24e6}{m\+\_\+render}}
+\begin{DoxyCompactList}\small\item\em game representation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controller class. 
+
+This class controls the game It has pointers on objects of game model and game representation It has constructor, destructor and public method Run -\/ start the game 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_controller_a1a88f549204f31bc893ab4abc227e5f6}\label{class_game_controller_a1a88f549204f31bc893ab4abc227e5f6}} 
+\index{GameController@{GameController}!GameController@{GameController}}
+\index{GameController@{GameController}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{GameController()}{GameController()}}
+{\footnotesize\ttfamily Game\+Controller\+::\+Game\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_model}{Game\+Model}} $\ast$}]{game,  }\item[{\mbox{\hyperlink{class_game_render}{Game\+Render}} $\ast$}]{render }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Parametr 1 -\/ game model Parametr 2 -\/ game representation \mbox{\Hypertarget{class_game_controller_aab436961a422d078975bc7a49bdfcab7}\label{class_game_controller_aab436961a422d078975bc7a49bdfcab7}} 
+\index{GameController@{GameController}!````~GameController@{$\sim$GameController}}
+\index{````~GameController@{$\sim$GameController}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameController()}{~GameController()}}
+{\footnotesize\ttfamily Game\+Controller\+::$\sim$\+Game\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_controller_a3330e16e1df52c6de6f857ac2a409604}\label{class_game_controller_a3330e16e1df52c6de6f857ac2a409604}} 
+\index{GameController@{GameController}!Run@{Run}}
+\index{Run@{Run}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Game\+Controller\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main method for starting the game. 
+
+Method with the main cycle, it works with messages and redraws the main window during the game $<$ mixing counters
+
+Press keys and moving counters
+
+The new game
+
+If the counter greater than 0, continue mixing counters(game objects)
+
+drawing the current situation
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_controller_a5bcead6907317e6da462c3b0b5420e40}\label{class_game_controller_a5bcead6907317e6da462c3b0b5420e40}} 
+\index{GameController@{GameController}!m\_game@{m\_game}}
+\index{m\_game@{m\_game}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{m\_game}{m\_game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_model}{Game\+Model}}$\ast$ Game\+Controller\+::m\+\_\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+game model 
+
+\mbox{\Hypertarget{class_game_controller_ad6d60d557b74560e37fb801e7e6c24e6}\label{class_game_controller_ad6d60d557b74560e37fb801e7e6c24e6}} 
+\index{GameController@{GameController}!m\_render@{m\_render}}
+\index{m\_render@{m\_render}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{m\_render}{m\_render}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_render}{Game\+Render}}$\ast$ Game\+Controller\+::m\+\_\+render\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+game representation 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/source/repos/\+Laba 3 O\+O\+P/\+Laba 3 O\+O\+P/\mbox{\hyperlink{_game_controller_8h}{Game\+Controller.\+h}}\item 
+C\+:/\+Users/\+User/source/repos/\+Laba 3 O\+O\+P/\+Laba 3 O\+O\+P/\mbox{\hyperlink{_game_controller_8cpp}{Game\+Controller.\+cpp}}\end{DoxyCompactItemize}
